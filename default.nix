@@ -1,4 +1,2 @@
-let
-  pkgs = import <nixpkgs> {};
-  checkmake = import ./default.nix;
-in pkgs.callPackage checkmake {}
+let checkmake = import ./checkmake.nix;
+in { checkmake = checkmake; }
