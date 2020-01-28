@@ -13,9 +13,8 @@ buildGoPackage rec {
     sha256 = "1pn2vys0lq9qapr3zyj0wamib91bq60gl9xjk9hlgv7r575shq5k";
   };
 
-  goDeps = ./deps.nix;
+  goDeps = [];
 
-  # TODO: add metadata https://nixos.org/nixpkgs/manual/#sec-standard-meta-attributes
   meta = with lib; {
     homepage = "https://github.com/mrtazz/checkmake";
     description = "experimental linter/analyzer for Makefiles";
