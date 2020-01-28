@@ -9,3 +9,6 @@ out/%.nix: %.nix
 .PHONY: clean
 clean:
 	rm -rvf out/* nixexprs.tar.bz2
+
+install:
+	nix-channel --update
