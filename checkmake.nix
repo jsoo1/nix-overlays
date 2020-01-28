@@ -13,7 +13,7 @@ buildGoPackage rec {
     sha256 = "1pn2vys0lq9qapr3zyj0wamib91bq60gl9xjk9hlgv7r575shq5k";
   };
 
-  goDeps = [];
+  goDeps = ./checkmake-deps.nix;
 
   meta = with lib; {
     homepage = "https://github.com/mrtazz/checkmake";

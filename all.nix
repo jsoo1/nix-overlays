@@ -1,1 +1,1 @@
-self: super: { checkmake = super.callPackage (import ./checkmake.nix); }
+[ (self: super: { checkmake = super.callPackage (import ./checkmake.nix) {}; }) ]
