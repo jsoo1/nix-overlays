@@ -1,2 +1,4 @@
 /result-bin
 /nixexprs.tar.bz2
+/.dir-locals.el
+/out/
